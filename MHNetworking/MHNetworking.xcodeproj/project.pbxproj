@@ -18,6 +18,15 @@
 		EC4520241F3F90A70073BC84 /* MHNPrettyError.m in Sources */ = {isa = PBXBuildFile; fileRef = EC4520221F3F90A70073BC84 /* MHNPrettyError.m */; };
 		EC4520271F3F90BC0073BC84 /* MHNInternalError.h in Headers */ = {isa = PBXBuildFile; fileRef = EC4520251F3F90BC0073BC84 /* MHNInternalError.h */; };
 		EC4520281F3F90BC0073BC84 /* MHNInternalError.m in Sources */ = {isa = PBXBuildFile; fileRef = EC4520261F3F90BC0073BC84 /* MHNInternalError.m */; };
+		EC45202B1F3FD2C50073BC84 /* MHNCodable.h in Headers */ = {isa = PBXBuildFile; fileRef = EC4520291F3FD2C50073BC84 /* MHNCodable.h */; };
+		EC45202C1F3FD2C50073BC84 /* MHNCodable.m in Sources */ = {isa = PBXBuildFile; fileRef = EC45202A1F3FD2C50073BC84 /* MHNCodable.m */; };
+		EC45202F1F3FD4FE0073BC84 /* MHNStreamWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = EC45202D1F3FD4FE0073BC84 /* MHNStreamWriter.h */; };
+		EC4520301F3FD4FE0073BC84 /* MHNStreamWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = EC45202E1F3FD4FE0073BC84 /* MHNStreamWriter.m */; };
+		EC4520331F3FD6B60073BC84 /* MHNJSONStreamWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = EC4520311F3FD6B60073BC84 /* MHNJSONStreamWriter.h */; };
+		EC4520341F3FD6B60073BC84 /* MHNJSONStreamWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = EC4520321F3FD6B60073BC84 /* MHNJSONStreamWriter.m */; };
+		EC4520371F3FDB1F0073BC84 /* MHNLogFacilityWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = EC4520351F3FDB1F0073BC84 /* MHNLogFacilityWrapper.h */; };
+		EC4520381F3FDB1F0073BC84 /* MHNLogFacilityWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = EC4520361F3FDB1F0073BC84 /* MHNLogFacilityWrapper.m */; };
+		EC45203B1F3FDCE50073BC84 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EC45203A1F3FDCE50073BC84 /* libz.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +43,16 @@
 		EC4520221F3F90A70073BC84 /* MHNPrettyError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHNPrettyError.m; sourceTree = "<group>"; };
 		EC4520251F3F90BC0073BC84 /* MHNInternalError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHNInternalError.h; sourceTree = "<group>"; };
 		EC4520261F3F90BC0073BC84 /* MHNInternalError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHNInternalError.m; sourceTree = "<group>"; };
+		EC4520291F3FD2C50073BC84 /* MHNCodable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHNCodable.h; sourceTree = "<group>"; };
+		EC45202A1F3FD2C50073BC84 /* MHNCodable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHNCodable.m; sourceTree = "<group>"; };
+		EC45202D1F3FD4FE0073BC84 /* MHNStreamWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHNStreamWriter.h; sourceTree = "<group>"; };
+		EC45202E1F3FD4FE0073BC84 /* MHNStreamWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHNStreamWriter.m; sourceTree = "<group>"; };
+		EC4520311F3FD6B60073BC84 /* MHNJSONStreamWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHNJSONStreamWriter.h; sourceTree = "<group>"; };
+		EC4520321F3FD6B60073BC84 /* MHNJSONStreamWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHNJSONStreamWriter.m; sourceTree = "<group>"; };
+		EC4520351F3FDB1F0073BC84 /* MHNLogFacilityWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHNLogFacilityWrapper.h; sourceTree = "<group>"; };
+		EC4520361F3FDB1F0073BC84 /* MHNLogFacilityWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHNLogFacilityWrapper.m; sourceTree = "<group>"; };
+		EC45203A1F3FDCE50073BC84 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		EC45203C1F3FDCF70073BC84 /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC45203B1F3FDCE50073BC84 /* libz.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +72,7 @@
 			children = (
 				EC45200C1F3F30D30073BC84 /* MHNetworking */,
 				EC45200B1F3F30D30073BC84 /* Products */,
+				EC4520391F3FDCE50073BC84 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,8 +99,25 @@
 				EC4520221F3F90A70073BC84 /* MHNPrettyError.m */,
 				EC4520251F3F90BC0073BC84 /* MHNInternalError.h */,
 				EC4520261F3F90BC0073BC84 /* MHNInternalError.m */,
+				EC4520291F3FD2C50073BC84 /* MHNCodable.h */,
+				EC45202A1F3FD2C50073BC84 /* MHNCodable.m */,
+				EC45202D1F3FD4FE0073BC84 /* MHNStreamWriter.h */,
+				EC45202E1F3FD4FE0073BC84 /* MHNStreamWriter.m */,
+				EC4520311F3FD6B60073BC84 /* MHNJSONStreamWriter.h */,
+				EC4520321F3FD6B60073BC84 /* MHNJSONStreamWriter.m */,
+				EC4520351F3FDB1F0073BC84 /* MHNLogFacilityWrapper.h */,
+				EC4520361F3FDB1F0073BC84 /* MHNLogFacilityWrapper.m */,
 			);
 			path = MHNetworking;
+			sourceTree = "<group>";
+		};
+		EC4520391F3FDCE50073BC84 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EC45203C1F3FDCF70073BC84 /* libbz2.tbd */,
+				EC45203A1F3FDCE50073BC84 /* libz.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -92,9 +130,13 @@
 				EC45201F1F3F7B4F0073BC84 /* MHNPlaintextResponseBodyParser.h in Headers */,
 				EC4520171F3F31070073BC84 /* MHNURLRequest.h in Headers */,
 				EC4520271F3F90BC0073BC84 /* MHNInternalError.h in Headers */,
+				EC45202F1F3FD4FE0073BC84 /* MHNStreamWriter.h in Headers */,
 				EC45201B1F3F705D0073BC84 /* MHNResponseBodyParser.h in Headers */,
+				EC45202B1F3FD2C50073BC84 /* MHNCodable.h in Headers */,
+				EC4520371F3FDB1F0073BC84 /* MHNLogFacilityWrapper.h in Headers */,
 				EC4520231F3F90A70073BC84 /* MHNPrettyError.h in Headers */,
 				EC45200F1F3F30D30073BC84 /* MHNetworking.h in Headers */,
+				EC4520331F3FD6B60073BC84 /* MHNJSONStreamWriter.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,10 +209,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC4520301F3FD4FE0073BC84 /* MHNStreamWriter.m in Sources */,
+				EC45202C1F3FD2C50073BC84 /* MHNCodable.m in Sources */,
 				EC4520241F3F90A70073BC84 /* MHNPrettyError.m in Sources */,
+				EC4520381F3FDB1F0073BC84 /* MHNLogFacilityWrapper.m in Sources */,
 				EC4520181F3F31070073BC84 /* MHNURLRequest.m in Sources */,
 				EC4520201F3F7B4F0073BC84 /* MHNPlaintextResponseBodyParser.m in Sources */,
 				EC4520281F3F90BC0073BC84 /* MHNInternalError.m in Sources */,
+				EC4520341F3FD6B60073BC84 /* MHNJSONStreamWriter.m in Sources */,
 				EC45201C1F3F705D0073BC84 /* MHNResponseBodyParser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

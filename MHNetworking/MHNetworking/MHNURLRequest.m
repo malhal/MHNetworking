@@ -22,7 +22,19 @@
 
 @end
 
-@implementation MHNURLRequest
+@implementation MHNURLRequest{
+    NSArray *_requestOperations; // or synthesize
+}
+
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        _httpMethod = @"POST";
+        _requestUUID = [NSUUID UUID].UUIDString;
+    }
+    return self;
+}
 
 - (void)performRequest{
     
@@ -79,6 +91,19 @@
         
     }
     // "[Request %p] Finishing request with no error"
+}
+
+- (id)generateRequestOperations{
+    NSAssert(NO, @"To be overridden by subclass");
+   
+    return nil;
+}
+
+- (NSArray *)requestOperations{
+    if(!_requestOperations.count){
+        _requestOperations = [self generateRequestOperations];
+    }
+    return _requestOperations;
 }
 
 - (void)finishWithError:(NSError *)error{

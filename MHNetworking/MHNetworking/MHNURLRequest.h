@@ -21,7 +21,7 @@ typedef void (^CDUnknownBlockType) ();
 @property (strong) NSURLSession *urlSession;
 @property (strong) NSURLSessionDataTask *urlSessionTask;
 @property (readonly, nonatomic) BOOL usesBackgroundSession;
-@property (readonly, nonatomic) NSString *httpMethod;
+@property (copy, nonatomic) NSString *httpMethod;
 @property (strong, nonatomic) CKDResponseBodyParser *responseBodyParser;
 @property (nonatomic) BOOL didReceiveResponseBodyData;
 @property (readonly, nonatomic) BOOL expectsResponseBody;
