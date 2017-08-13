@@ -22,7 +22,7 @@ typedef void (^CDUnknownBlockType) ();
 
 - (void)dealloc;
 - (instancetype)initWithCompression:(BOOL)shouldCompress;
-- (id)open;
+- (NSInputStream *)open;
 - (void)setStreamedObjects:(id)arg1;
 - (void)stream:(id)arg1 handleEvent:(NSUInteger)arg2;
 - (void)tearDown;

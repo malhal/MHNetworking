@@ -10,6 +10,8 @@
 #import "MHNURLRequest.h"
 #import "MHNPlaintextResponseBodyParser.h"
 #import "MHNInternalError.h"
+#import "MHNStreamWriter.h"
+#import "MHNJSONStreamWriter.h"
 
 @interface MHNURLRequest()
 
@@ -19,12 +21,17 @@
 - (CDUnknownBlockType)_xmlObjectParsedBlock;
 - (void)_finishOnLifecycleQueueWithError:(NSError *)error;
 - (BOOL)_onLifecycleQueue;
+- (void)_tearDownStreamWriter;
+- (void)_registerRequestOperationTypesForOperations:(id)arg1;
 
 @end
 
 @implementation MHNURLRequest{
     NSArray *_requestOperations; // or synthesize
+    //MHNStreamWriter *_streamWriter;
 }
+
+@synthesize streamWriter = _streamWriter;
 
 - (instancetype)init
 {
@@ -124,6 +131,30 @@
 
 - (BOOL)_onLifecycleQueue{
     return dispatch_get_specific((__bridge const void * _Nonnull)(self.lifecycleQueue));
+}
+
+- (NSInputStream *)requestBodyStream{
+    NSArray *operations = self.requestOperations;
+    if(!operations.count){
+        if(os_log_type_enabled(OS_LOG_DEFAULT, OS_LOG_TYPE_ERROR)){
+            os_log_error(OS_LOG_DEFAULT, "[Request %p] Not returning a request body stream because there are no items to stream", self);
+        }
+        MHNInternalError* error = [MHNInternalError errorWithCode:0x7d5 format:@"there is no operation associated with this request"];
+        [self finishWithError:error];
+        return nil;
+    }
+    [self _tearDownStreamWriter];
+    [self _registerRequestOperationTypesForOperations:operations];
+    [self.streamWriter setStreamedObjects:nil];
+    return [self.streamWriter open];
+}
+
+- (MHNStreamWriter *)streamWriter{
+    if(!_streamWriter){
+        _streamWriter = [[MHNJSONStreamWriter alloc] initWithCompression:NO];
+        // _streamWriter setLogRequestObjectBlock
+    }
+    return _streamWriter;
 }
 
 @end

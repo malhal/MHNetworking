@@ -9,7 +9,7 @@ typedef void (^CDUnknownBlockType) ();
 
 #import <Foundation/Foundation.h>
 
-@class CKDResponseBodyParser;
+@class CKDResponseBodyParser, MHNStreamWriter;
 
 @interface MHNURLRequest : NSObject
 
@@ -31,6 +31,7 @@ typedef void (^CDUnknownBlockType) ();
 @property (copy, nonatomic) CDUnknownBlockType responseProgressBlock;
 @property (readonly, nonatomic) NSInteger responseStatusCode;
 @property (readonly, nonatomic) BOOL hasRequestBody;
+@property (readonly, nonatomic) NSInputStream *requestBodyStream;
 @property (readonly, nonatomic) NSString *requestContentType;
 @property (readonly, nonatomic) NSArray *requestOperationClasses;
 @property (readonly, nonatomic) NSArray *requestOperations; // @synthesize requestOperations=_requestOperations;
@@ -39,6 +40,7 @@ typedef void (^CDUnknownBlockType) ();
 @property (readonly, nonatomic) NSString *requestUUID;
 @property (strong, nonatomic) dispatch_queue_t lifecycleQueue;
 @property (copy, nonatomic) CDUnknownBlockType completionBlock;
+@property (readonly, nonatomic) MHNStreamWriter *streamWriter;
 
 - (void)performRequest;
 - (id)defaultParserForContentType:(id)arg1;
