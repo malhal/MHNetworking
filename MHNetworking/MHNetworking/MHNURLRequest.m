@@ -29,6 +29,7 @@
 @implementation MHNURLRequest{
     NSArray *_requestOperations; // or synthesize
     //MHNStreamWriter *_streamWriter;
+    BOOL _didSendRequest;
 }
 
 @synthesize streamWriter = _streamWriter;
@@ -102,7 +103,6 @@
 
 - (id)generateRequestOperations{
     NSAssert(NO, @"To be overridden by subclass");
-   
     return nil;
 }
 
@@ -130,7 +130,7 @@
 }
 
 - (BOOL)_onLifecycleQueue{
-    return dispatch_get_specific((__bridge const void * _Nonnull)(self.lifecycleQueue));
+    return dispatch_get_specific((__bridge const void * _Nonnull)(self.lifecycleQueue)) != nil;
 }
 
 - (NSInputStream *)requestBodyStream{
@@ -143,7 +143,7 @@
         [self finishWithError:error];
         return nil;
     }
-    [self _tearDownStreamWriter];
+    //[self _tearDownStreamWriter]; // if they set it we don't want to clear it
     [self _registerRequestOperationTypesForOperations:operations];
     [self.streamWriter setStreamedObjects:nil];
     return [self.streamWriter open];
@@ -155,6 +155,21 @@
         // _streamWriter setLogRequestObjectBlock
     }
     return _streamWriter;
+}
+
+- (void)_tearDownStreamWriter{
+    @synchronized (self) {
+        if(_streamWriter){
+            _streamWriter = nil;
+        }
+    }
+}
+
+- (void)dealloc
+{
+    [self _tearDownStreamWriter];
+    NSAssert(self.isFinished || !_didSendRequest, @"<%@ %p>: Requests must be finished before deallocation", NSStringFromClass([self class]), self);
+    NSAssert(!self.urlSessionTask, @"<%@ %p>: The URL session data task should be nil: %p", NSStringFromClass([self class]), self, self.urlSessionTask);
 }
 
 @end
