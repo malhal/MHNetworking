@@ -35,10 +35,7 @@
         if(shouldCompress){
             int result = deflateInit2_(&_zlibStream, Z_DEFAULT_COMPRESSION, Z_DEFLATED, 31, 8, 0, "1.2.11", 112);
             if(result != Z_OK){
-                mhn_log_facilities_initailize_static();
-                if(os_log_type_enabled(mhn_log_facility_mhn, OS_LOG_TYPE_ERROR)){
-                    os_log_error(mhn_log_facility_mhn, "Could not initialize zlib for compression, error %d", result);
-                }
+                mhn_log_with_type(mhn_log_facility_mhn, OS_LOG_TYPE_ERROR, "Could not initialize zlib for compression, error %d", result);
             }
             else{
                 _hasInitedCompression = YES;

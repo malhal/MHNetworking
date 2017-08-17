@@ -40,6 +40,7 @@
     if (self) {
         _httpMethod = @"POST";
         _requestUUID = [NSUUID UUID].UUIDString;
+        
     }
     return self;
 }
@@ -101,6 +102,7 @@
     // "[Request %p] Finishing request with no error"
 }
 
+// generates the operations that transform from the app objects to the protocol objects.
 - (id)generateRequestOperations{
     NSAssert(NO, @"To be overridden by subclass");
     return nil;
@@ -170,6 +172,19 @@
     [self _tearDownStreamWriter];
     NSAssert(self.isFinished || !_didSendRequest, @"<%@ %p>: Requests must be finished before deallocation", NSStringFromClass([self class]), self);
     NSAssert(!self.urlSessionTask, @"<%@ %p>: The URL session data task should be nil: %p", NSStringFromClass([self class]), self, self.urlSessionTask);
+}
+
+- (id)operationRequestWithType:(int)type{
+    //MHNRequestOperation *req = [MHNRequestOperation new];
+    //CKDPOperation *op = [CKDPOperation new];
+    return nil;
+    
+}
+
+- (void)_loadRequest:(id)arg1{
+    
+    // calls resume inside a block
+    
 }
 
 @end

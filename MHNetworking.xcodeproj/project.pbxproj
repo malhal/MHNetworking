@@ -8,25 +8,42 @@
 
 /* Begin PBXBuildFile section */
 		EC45200F1F3F30D30073BC84 /* MHNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = EC45200D1F3F30D30073BC84 /* MHNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EC4520171F3F31070073BC84 /* MHNURLRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = EC4520151F3F31070073BC84 /* MHNURLRequest.h */; };
+		EC4520171F3F31070073BC84 /* MHNURLRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = EC4520151F3F31070073BC84 /* MHNURLRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EC4520181F3F31070073BC84 /* MHNURLRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = EC4520161F3F31070073BC84 /* MHNURLRequest.m */; };
-		EC45201B1F3F705D0073BC84 /* MHNResponseBodyParser.h in Headers */ = {isa = PBXBuildFile; fileRef = EC4520191F3F705D0073BC84 /* MHNResponseBodyParser.h */; };
+		EC45201B1F3F705D0073BC84 /* MHNResponseBodyParser.h in Headers */ = {isa = PBXBuildFile; fileRef = EC4520191F3F705D0073BC84 /* MHNResponseBodyParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EC45201C1F3F705D0073BC84 /* MHNResponseBodyParser.m in Sources */ = {isa = PBXBuildFile; fileRef = EC45201A1F3F705D0073BC84 /* MHNResponseBodyParser.m */; };
-		EC45201F1F3F7B4F0073BC84 /* MHNPlaintextResponseBodyParser.h in Headers */ = {isa = PBXBuildFile; fileRef = EC45201D1F3F7B4F0073BC84 /* MHNPlaintextResponseBodyParser.h */; };
+		EC45201F1F3F7B4F0073BC84 /* MHNPlaintextResponseBodyParser.h in Headers */ = {isa = PBXBuildFile; fileRef = EC45201D1F3F7B4F0073BC84 /* MHNPlaintextResponseBodyParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EC4520201F3F7B4F0073BC84 /* MHNPlaintextResponseBodyParser.m in Sources */ = {isa = PBXBuildFile; fileRef = EC45201E1F3F7B4F0073BC84 /* MHNPlaintextResponseBodyParser.m */; };
-		EC4520231F3F90A70073BC84 /* MHNPrettyError.h in Headers */ = {isa = PBXBuildFile; fileRef = EC4520211F3F90A70073BC84 /* MHNPrettyError.h */; };
+		EC4520231F3F90A70073BC84 /* MHNPrettyError.h in Headers */ = {isa = PBXBuildFile; fileRef = EC4520211F3F90A70073BC84 /* MHNPrettyError.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EC4520241F3F90A70073BC84 /* MHNPrettyError.m in Sources */ = {isa = PBXBuildFile; fileRef = EC4520221F3F90A70073BC84 /* MHNPrettyError.m */; };
 		EC4520271F3F90BC0073BC84 /* MHNInternalError.h in Headers */ = {isa = PBXBuildFile; fileRef = EC4520251F3F90BC0073BC84 /* MHNInternalError.h */; };
 		EC4520281F3F90BC0073BC84 /* MHNInternalError.m in Sources */ = {isa = PBXBuildFile; fileRef = EC4520261F3F90BC0073BC84 /* MHNInternalError.m */; };
-		EC45202B1F3FD2C50073BC84 /* MHNCodable.h in Headers */ = {isa = PBXBuildFile; fileRef = EC4520291F3FD2C50073BC84 /* MHNCodable.h */; };
+		EC45202B1F3FD2C50073BC84 /* MHNCodable.h in Headers */ = {isa = PBXBuildFile; fileRef = EC4520291F3FD2C50073BC84 /* MHNCodable.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EC45202C1F3FD2C50073BC84 /* MHNCodable.m in Sources */ = {isa = PBXBuildFile; fileRef = EC45202A1F3FD2C50073BC84 /* MHNCodable.m */; };
-		EC45202F1F3FD4FE0073BC84 /* MHNStreamWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = EC45202D1F3FD4FE0073BC84 /* MHNStreamWriter.h */; };
+		EC45202F1F3FD4FE0073BC84 /* MHNStreamWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = EC45202D1F3FD4FE0073BC84 /* MHNStreamWriter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EC4520301F3FD4FE0073BC84 /* MHNStreamWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = EC45202E1F3FD4FE0073BC84 /* MHNStreamWriter.m */; };
-		EC4520331F3FD6B60073BC84 /* MHNJSONStreamWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = EC4520311F3FD6B60073BC84 /* MHNJSONStreamWriter.h */; };
+		EC4520331F3FD6B60073BC84 /* MHNJSONStreamWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = EC4520311F3FD6B60073BC84 /* MHNJSONStreamWriter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EC4520341F3FD6B60073BC84 /* MHNJSONStreamWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = EC4520321F3FD6B60073BC84 /* MHNJSONStreamWriter.m */; };
-		EC4520371F3FDB1F0073BC84 /* MHNLogFacilityWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = EC4520351F3FDB1F0073BC84 /* MHNLogFacilityWrapper.h */; };
+		EC4520371F3FDB1F0073BC84 /* MHNLogFacilityWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = EC4520351F3FDB1F0073BC84 /* MHNLogFacilityWrapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EC4520381F3FDB1F0073BC84 /* MHNLogFacilityWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = EC4520361F3FDB1F0073BC84 /* MHNLogFacilityWrapper.m */; };
 		EC45203B1F3FDCE50073BC84 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EC45203A1F3FDCE50073BC84 /* libz.tbd */; };
+		EC4520811F408F830073BC84 /* MHNRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = EC45207F1F408F830073BC84 /* MHNRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EC4520821F408F830073BC84 /* MHNRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = EC4520801F408F830073BC84 /* MHNRequest.m */; };
+		EC45208B1F40A61B0073BC84 /* MHNOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = EC4520891F40A61B0073BC84 /* MHNOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EC45208C1F40A61B0073BC84 /* MHNOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = EC45208A1F40A61B0073BC84 /* MHNOperation.m */; };
+		EC4520931F40AE660073BC84 /* MHNProtocolTranslator.h in Headers */ = {isa = PBXBuildFile; fileRef = EC4520911F40AE660073BC84 /* MHNProtocolTranslator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EC4520941F40AE660073BC84 /* MHNProtocolTranslator.m in Sources */ = {isa = PBXBuildFile; fileRef = EC4520921F40AE660073BC84 /* MHNProtocolTranslator.m */; };
+		EC4520971F44C19A0073BC84 /* MHNRequestManager.h in Headers */ = {isa = PBXBuildFile; fileRef = EC4520951F44C19A0073BC84 /* MHNRequestManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EC4520981F44C19A0073BC84 /* MHNRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EC4520961F44C19A0073BC84 /* MHNRequestManager.m */; };
+		EC45209C1F44C37F0073BC84 /* MHNSessionPool.m in Sources */ = {isa = PBXBuildFile; fileRef = EC45209A1F44C37F0073BC84 /* MHNSessionPool.m */; };
+		EC4520A11F44DA4C0073BC84 /* MHNRequestOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = EC45209F1F44DA4C0073BC84 /* MHNRequestOptions.m */; };
+		EC4520A51F4509780073BC84 /* MHNSession.m in Sources */ = {isa = PBXBuildFile; fileRef = EC4520A31F4509780073BC84 /* MHNSession.m */; };
+		EC4520AB1F4592630073BC84 /* MHNSessionTask.m in Sources */ = {isa = PBXBuildFile; fileRef = EC4520A91F4592630073BC84 /* MHNSessionTask.m */; };
+		EC4520AF1F4594410073BC84 /* MHNSessionPool.h in Headers */ = {isa = PBXBuildFile; fileRef = EC4520991F44C37F0073BC84 /* MHNSessionPool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EC4520B01F4594410073BC84 /* MHNRequestDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = EC45209D1F44CD380073BC84 /* MHNRequestDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EC4520B11F4594410073BC84 /* MHNRequestOptions.h in Headers */ = {isa = PBXBuildFile; fileRef = EC45209E1F44DA4C0073BC84 /* MHNRequestOptions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EC4520B21F4594410073BC84 /* MHNSession.h in Headers */ = {isa = PBXBuildFile; fileRef = EC4520A21F4509780073BC84 /* MHNSession.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EC4520B41F4594410073BC84 /* MHNSessionTask.h in Headers */ = {isa = PBXBuildFile; fileRef = EC4520A81F4592630073BC84 /* MHNSessionTask.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +70,23 @@
 		EC4520361F3FDB1F0073BC84 /* MHNLogFacilityWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHNLogFacilityWrapper.m; sourceTree = "<group>"; };
 		EC45203A1F3FDCE50073BC84 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		EC45203C1F3FDCF70073BC84 /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
+		EC45207F1F408F830073BC84 /* MHNRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHNRequest.h; sourceTree = "<group>"; };
+		EC4520801F408F830073BC84 /* MHNRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHNRequest.m; sourceTree = "<group>"; };
+		EC4520891F40A61B0073BC84 /* MHNOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHNOperation.h; sourceTree = "<group>"; };
+		EC45208A1F40A61B0073BC84 /* MHNOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHNOperation.m; sourceTree = "<group>"; };
+		EC4520911F40AE660073BC84 /* MHNProtocolTranslator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHNProtocolTranslator.h; sourceTree = "<group>"; };
+		EC4520921F40AE660073BC84 /* MHNProtocolTranslator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHNProtocolTranslator.m; sourceTree = "<group>"; };
+		EC4520951F44C19A0073BC84 /* MHNRequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHNRequestManager.h; sourceTree = "<group>"; };
+		EC4520961F44C19A0073BC84 /* MHNRequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHNRequestManager.m; sourceTree = "<group>"; };
+		EC4520991F44C37F0073BC84 /* MHNSessionPool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHNSessionPool.h; sourceTree = "<group>"; };
+		EC45209A1F44C37F0073BC84 /* MHNSessionPool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHNSessionPool.m; sourceTree = "<group>"; };
+		EC45209D1F44CD380073BC84 /* MHNRequestDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHNRequestDelegate.h; sourceTree = "<group>"; };
+		EC45209E1F44DA4C0073BC84 /* MHNRequestOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHNRequestOptions.h; sourceTree = "<group>"; };
+		EC45209F1F44DA4C0073BC84 /* MHNRequestOptions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHNRequestOptions.m; sourceTree = "<group>"; };
+		EC4520A21F4509780073BC84 /* MHNSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHNSession.h; sourceTree = "<group>"; };
+		EC4520A31F4509780073BC84 /* MHNSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHNSession.m; sourceTree = "<group>"; };
+		EC4520A81F4592630073BC84 /* MHNSessionTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHNSessionTask.h; sourceTree = "<group>"; };
+		EC4520A91F4592630073BC84 /* MHNSessionTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHNSessionTask.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,12 +135,29 @@
 				EC4520261F3F90BC0073BC84 /* MHNInternalError.m */,
 				EC4520291F3FD2C50073BC84 /* MHNCodable.h */,
 				EC45202A1F3FD2C50073BC84 /* MHNCodable.m */,
+				EC45207F1F408F830073BC84 /* MHNRequest.h */,
+				EC4520801F408F830073BC84 /* MHNRequest.m */,
 				EC45202D1F3FD4FE0073BC84 /* MHNStreamWriter.h */,
 				EC45202E1F3FD4FE0073BC84 /* MHNStreamWriter.m */,
 				EC4520311F3FD6B60073BC84 /* MHNJSONStreamWriter.h */,
 				EC4520321F3FD6B60073BC84 /* MHNJSONStreamWriter.m */,
 				EC4520351F3FDB1F0073BC84 /* MHNLogFacilityWrapper.h */,
 				EC4520361F3FDB1F0073BC84 /* MHNLogFacilityWrapper.m */,
+				EC4520891F40A61B0073BC84 /* MHNOperation.h */,
+				EC45208A1F40A61B0073BC84 /* MHNOperation.m */,
+				EC4520911F40AE660073BC84 /* MHNProtocolTranslator.h */,
+				EC4520921F40AE660073BC84 /* MHNProtocolTranslator.m */,
+				EC4520951F44C19A0073BC84 /* MHNRequestManager.h */,
+				EC4520961F44C19A0073BC84 /* MHNRequestManager.m */,
+				EC4520991F44C37F0073BC84 /* MHNSessionPool.h */,
+				EC45209A1F44C37F0073BC84 /* MHNSessionPool.m */,
+				EC45209D1F44CD380073BC84 /* MHNRequestDelegate.h */,
+				EC45209E1F44DA4C0073BC84 /* MHNRequestOptions.h */,
+				EC45209F1F44DA4C0073BC84 /* MHNRequestOptions.m */,
+				EC4520A21F4509780073BC84 /* MHNSession.h */,
+				EC4520A31F4509780073BC84 /* MHNSession.m */,
+				EC4520A81F4592630073BC84 /* MHNSessionTask.h */,
+				EC4520A91F4592630073BC84 /* MHNSessionTask.m */,
 			);
 			path = MHNetworking;
 			sourceTree = "<group>";
@@ -127,14 +178,23 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC45208B1F40A61B0073BC84 /* MHNOperation.h in Headers */,
+				EC4520B01F4594410073BC84 /* MHNRequestDelegate.h in Headers */,
+				EC4520AF1F4594410073BC84 /* MHNSessionPool.h in Headers */,
 				EC45201F1F3F7B4F0073BC84 /* MHNPlaintextResponseBodyParser.h in Headers */,
+				EC4520B11F4594410073BC84 /* MHNRequestOptions.h in Headers */,
 				EC4520171F3F31070073BC84 /* MHNURLRequest.h in Headers */,
 				EC4520271F3F90BC0073BC84 /* MHNInternalError.h in Headers */,
+				EC4520B21F4594410073BC84 /* MHNSession.h in Headers */,
 				EC45202F1F3FD4FE0073BC84 /* MHNStreamWriter.h in Headers */,
 				EC45201B1F3F705D0073BC84 /* MHNResponseBodyParser.h in Headers */,
+				EC4520971F44C19A0073BC84 /* MHNRequestManager.h in Headers */,
+				EC4520B41F4594410073BC84 /* MHNSessionTask.h in Headers */,
+				EC4520811F408F830073BC84 /* MHNRequest.h in Headers */,
 				EC45202B1F3FD2C50073BC84 /* MHNCodable.h in Headers */,
 				EC4520371F3FDB1F0073BC84 /* MHNLogFacilityWrapper.h in Headers */,
 				EC4520231F3F90A70073BC84 /* MHNPrettyError.h in Headers */,
+				EC4520931F40AE660073BC84 /* MHNProtocolTranslator.h in Headers */,
 				EC45200F1F3F30D30073BC84 /* MHNetworking.h in Headers */,
 				EC4520331F3FD6B60073BC84 /* MHNJSONStreamWriter.h in Headers */,
 			);
@@ -213,10 +273,18 @@
 				EC45202C1F3FD2C50073BC84 /* MHNCodable.m in Sources */,
 				EC4520241F3F90A70073BC84 /* MHNPrettyError.m in Sources */,
 				EC4520381F3FDB1F0073BC84 /* MHNLogFacilityWrapper.m in Sources */,
+				EC4520A11F44DA4C0073BC84 /* MHNRequestOptions.m in Sources */,
 				EC4520181F3F31070073BC84 /* MHNURLRequest.m in Sources */,
+				EC4520821F408F830073BC84 /* MHNRequest.m in Sources */,
+				EC4520AB1F4592630073BC84 /* MHNSessionTask.m in Sources */,
+				EC45209C1F44C37F0073BC84 /* MHNSessionPool.m in Sources */,
+				EC45208C1F40A61B0073BC84 /* MHNOperation.m in Sources */,
+				EC4520941F40AE660073BC84 /* MHNProtocolTranslator.m in Sources */,
 				EC4520201F3F7B4F0073BC84 /* MHNPlaintextResponseBodyParser.m in Sources */,
 				EC4520281F3F90BC0073BC84 /* MHNInternalError.m in Sources */,
 				EC4520341F3FD6B60073BC84 /* MHNJSONStreamWriter.m in Sources */,
+				EC4520981F44C19A0073BC84 /* MHNRequestManager.m in Sources */,
+				EC4520A51F4509780073BC84 /* MHNSession.m in Sources */,
 				EC45201C1F3F705D0073BC84 /* MHNResponseBodyParser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -378,6 +446,7 @@
 				EC4520141F3F30D30073BC84 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

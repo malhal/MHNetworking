@@ -1,0 +1,437 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EC45204D1F408D740073BC84 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EC45204C1F408D740073BC84 /* main.m */; };
+		EC4520501F408D740073BC84 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EC45204F1F408D740073BC84 /* AppDelegate.m */; };
+		EC4520531F408D740073BC84 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC4520521F408D740073BC84 /* MasterViewController.m */; };
+		EC4520561F408D740073BC84 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC4520551F408D740073BC84 /* DetailViewController.m */; };
+		EC4520591F408D740073BC84 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC4520571F408D740073BC84 /* Main.storyboard */; };
+		EC45205B1F408D740073BC84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC45205A1F408D740073BC84 /* Assets.xcassets */; };
+		EC45205E1F408D740073BC84 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC45205C1F408D740073BC84 /* LaunchScreen.storyboard */; };
+		EC4520741F408DDC0073BC84 /* MHNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC4520711F408DC90073BC84 /* MHNetworking.framework */; };
+		EC4520751F408DDC0073BC84 /* MHNetworking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EC4520711F408DC90073BC84 /* MHNetworking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EC45207B1F408E750073BC84 /* QueryURLRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = EC45207A1F408E750073BC84 /* QueryURLRequest.m */; };
+		EC45207E1F408EF70073BC84 /* Query.m in Sources */ = {isa = PBXBuildFile; fileRef = EC45207D1F408EF70073BC84 /* Query.m */; };
+		EC4520881F4090CF0073BC84 /* QueryRetrieveRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = EC4520871F4090CF0073BC84 /* QueryRetrieveRequest.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EC4520701F408DC90073BC84 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC45206C1F408DC90073BC84 /* MHNetworking.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EC45200A1F3F30D30073BC84;
+			remoteInfo = MHNetworking;
+		};
+		EC4520721F408DCD0073BC84 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC45206C1F408DC90073BC84 /* MHNetworking.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = EC4520091F3F30D30073BC84;
+			remoteInfo = MHNetworking;
+		};
+		EC4520761F408DDC0073BC84 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC45206C1F408DC90073BC84 /* MHNetworking.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = EC4520091F3F30D30073BC84;
+			remoteInfo = MHNetworking;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EC4520781F408DDC0073BC84 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				EC4520751F408DDC0073BC84 /* MHNetworking.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		EC4520481F408D740073BC84 /* MHNetworkingDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MHNetworkingDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC45204C1F408D740073BC84 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EC45204E1F408D740073BC84 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EC45204F1F408D740073BC84 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EC4520511F408D740073BC84 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		EC4520521F408D740073BC84 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		EC4520541F408D740073BC84 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		EC4520551F408D740073BC84 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		EC4520581F408D740073BC84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EC45205A1F408D740073BC84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EC45205D1F408D740073BC84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EC45205F1F408D740073BC84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC45206C1F408DC90073BC84 /* MHNetworking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = MHNetworking.xcodeproj; sourceTree = "<group>"; };
+		EC4520791F408E750073BC84 /* QueryURLRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QueryURLRequest.h; sourceTree = "<group>"; };
+		EC45207A1F408E750073BC84 /* QueryURLRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QueryURLRequest.m; sourceTree = "<group>"; };
+		EC45207C1F408EF70073BC84 /* Query.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Query.h; sourceTree = "<group>"; };
+		EC45207D1F408EF70073BC84 /* Query.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Query.m; sourceTree = "<group>"; };
+		EC4520861F4090CF0073BC84 /* QueryRetrieveRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QueryRetrieveRequest.h; sourceTree = "<group>"; };
+		EC4520871F4090CF0073BC84 /* QueryRetrieveRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QueryRetrieveRequest.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EC4520451F408D740073BC84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC4520741F408DDC0073BC84 /* MHNetworking.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EC45203F1F408D740073BC84 = {
+			isa = PBXGroup;
+			children = (
+				EC45204A1F408D740073BC84 /* MHNetworkingDemo */,
+				EC45206B1F408DBF0073BC84 /* Frameworks */,
+				EC4520491F408D740073BC84 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EC4520491F408D740073BC84 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EC4520481F408D740073BC84 /* MHNetworkingDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EC45204A1F408D740073BC84 /* MHNetworkingDemo */ = {
+			isa = PBXGroup;
+			children = (
+				EC45204E1F408D740073BC84 /* AppDelegate.h */,
+				EC45204F1F408D740073BC84 /* AppDelegate.m */,
+				EC4520511F408D740073BC84 /* MasterViewController.h */,
+				EC4520521F408D740073BC84 /* MasterViewController.m */,
+				EC4520541F408D740073BC84 /* DetailViewController.h */,
+				EC4520551F408D740073BC84 /* DetailViewController.m */,
+				EC4520571F408D740073BC84 /* Main.storyboard */,
+				EC45205A1F408D740073BC84 /* Assets.xcassets */,
+				EC45205C1F408D740073BC84 /* LaunchScreen.storyboard */,
+				EC45205F1F408D740073BC84 /* Info.plist */,
+				EC45204B1F408D740073BC84 /* Supporting Files */,
+				EC4520791F408E750073BC84 /* QueryURLRequest.h */,
+				EC45207A1F408E750073BC84 /* QueryURLRequest.m */,
+				EC45207C1F408EF70073BC84 /* Query.h */,
+				EC45207D1F408EF70073BC84 /* Query.m */,
+				EC4520861F4090CF0073BC84 /* QueryRetrieveRequest.h */,
+				EC4520871F4090CF0073BC84 /* QueryRetrieveRequest.m */,
+			);
+			path = MHNetworkingDemo;
+			sourceTree = "<group>";
+		};
+		EC45204B1F408D740073BC84 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EC45204C1F408D740073BC84 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EC45206B1F408DBF0073BC84 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EC45206C1F408DC90073BC84 /* MHNetworking.xcodeproj */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EC45206D1F408DC90073BC84 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EC4520711F408DC90073BC84 /* MHNetworking.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EC4520471F408D740073BC84 /* MHNetworkingDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC4520621F408D740073BC84 /* Build configuration list for PBXNativeTarget "MHNetworkingDemo" */;
+			buildPhases = (
+				EC4520441F408D740073BC84 /* Sources */,
+				EC4520451F408D740073BC84 /* Frameworks */,
+				EC4520461F408D740073BC84 /* Resources */,
+				EC4520781F408DDC0073BC84 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC4520731F408DCD0073BC84 /* PBXTargetDependency */,
+				EC4520771F408DDC0073BC84 /* PBXTargetDependency */,
+			);
+			name = MHNetworkingDemo;
+			productName = MHNetworkingDemo;
+			productReference = EC4520481F408D740073BC84 /* MHNetworkingDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EC4520401F408D740073BC84 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Malcolm Hall";
+				TargetAttributes = {
+					EC4520471F408D740073BC84 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = HUK6B7UUU2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = EC4520431F408D740073BC84 /* Build configuration list for PBXProject "MHNetworkingDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EC45203F1F408D740073BC84;
+			productRefGroup = EC4520491F408D740073BC84 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = EC45206D1F408DC90073BC84 /* Products */;
+					ProjectRef = EC45206C1F408DC90073BC84 /* MHNetworking.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				EC4520471F408D740073BC84 /* MHNetworkingDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		EC4520711F408DC90073BC84 /* MHNetworking.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = MHNetworking.framework;
+			remoteRef = EC4520701F408DC90073BC84 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EC4520461F408D740073BC84 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC45205E1F408D740073BC84 /* LaunchScreen.storyboard in Resources */,
+				EC45205B1F408D740073BC84 /* Assets.xcassets in Resources */,
+				EC4520591F408D740073BC84 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EC4520441F408D740073BC84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC4520881F4090CF0073BC84 /* QueryRetrieveRequest.m in Sources */,
+				EC45207E1F408EF70073BC84 /* Query.m in Sources */,
+				EC4520501F408D740073BC84 /* AppDelegate.m in Sources */,
+				EC4520531F408D740073BC84 /* MasterViewController.m in Sources */,
+				EC45204D1F408D740073BC84 /* main.m in Sources */,
+				EC4520561F408D740073BC84 /* DetailViewController.m in Sources */,
+				EC45207B1F408E750073BC84 /* QueryURLRequest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EC4520731F408DCD0073BC84 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MHNetworking;
+			targetProxy = EC4520721F408DCD0073BC84 /* PBXContainerItemProxy */;
+		};
+		EC4520771F408DDC0073BC84 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MHNetworking;
+			targetProxy = EC4520761F408DDC0073BC84 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EC4520571F408D740073BC84 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC4520581F408D740073BC84 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EC45205C1F408D740073BC84 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC45205D1F408D740073BC84 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EC4520601F408D740073BC84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EC4520611F408D740073BC84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EC4520631F408D740073BC84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = HUK6B7UUU2;
+				INFOPLIST_FILE = MHNetworkingDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.malhal.MHNetworkingDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EC4520641F408D740073BC84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = HUK6B7UUU2;
+				INFOPLIST_FILE = MHNetworkingDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.malhal.MHNetworkingDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EC4520431F408D740073BC84 /* Build configuration list for PBXProject "MHNetworkingDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC4520601F408D740073BC84 /* Debug */,
+				EC4520611F408D740073BC84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC4520621F408D740073BC84 /* Build configuration list for PBXNativeTarget "MHNetworkingDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC4520631F408D740073BC84 /* Debug */,
+				EC4520641F408D740073BC84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EC4520401F408D740073BC84 /* Project object */;
+}

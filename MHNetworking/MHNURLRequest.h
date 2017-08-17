@@ -9,7 +9,7 @@ typedef void (^CDUnknownBlockType) ();
 
 #import <Foundation/Foundation.h>
 
-@class CKDResponseBodyParser, MHNStreamWriter;
+@class CKDResponseBodyParser, MHNStreamWriter, CKDProtocolTranslator;
 
 @interface MHNURLRequest : NSObject
 
@@ -41,11 +41,13 @@ typedef void (^CDUnknownBlockType) ();
 @property (strong, nonatomic) dispatch_queue_t lifecycleQueue;
 @property (copy, nonatomic) CDUnknownBlockType completionBlock;
 @property (readonly, nonatomic) MHNStreamWriter *streamWriter;
+@property (readonly, nonatomic) int operationType;
+@property (strong, nonatomic) CKDProtocolTranslator *translator;
 
 - (void)performRequest;
 - (id)defaultParserForContentType:(id)arg1;
 - (id)generateRequestOperations;
-- (id)operationRequestWithType:(int)arg1;
+- (id)operationRequestWithType:(int)type;
 - (void)prepareRequestWithCompletion:(CDUnknownBlockType)arg1;
 - (void)requestDidParse509CertObject:(NSData *)object;
 - (void)requestDidParseJSONObject:(id)arg1;
