@@ -53,30 +53,34 @@
     if(!name){
         return nil;
     }
-    NSString *indentifier = [NSString stringWithFormat:@"host=%@:%@", host, name];
+    name = [NSString stringWithFormat:@"host=%@:%@", host, name];
     MHNSession *session;
     @synchronized (self) {
-        session = _sessionConfigurationNameToPinnedSession[indentifier];
+        session = _sessionConfigurationNameToPinnedSession[name];
         if(!session){
             if(!options2.tlsPinning){
-                session = _sessionConfigurationNameToUnpinnedSession[indentifier];
+                session = _sessionConfigurationNameToUnpinnedSession[name];
             }
             if(!session){
-                session = [[MHNSession alloc] initWithSessionIdentifier:indentifier options:options2 sessionDelegate:self];
+                session = [[MHNSession alloc] initWithSessionIdentifier:name options:options2 sessionDelegate:self];
                 if(!session){
                     mhn_log_with_type(mhn_log_facility_pool, OS_LOG_TYPE_DEFAULT, "%{public}@ can't create a new session with name: %{public}@", options2, request);
                     return nil;
                 }
                 else if(options2.tlsPinning){
-                    _sessionConfigurationNameToPinnedSession[indentifier] = session;
+                    _sessionConfigurationNameToPinnedSession[name] = session;
                 }
                 else{
-                    _sessionConfigurationNameToUnpinnedSession[indentifier] = session;
+                    _sessionConfigurationNameToUnpinnedSession[name] = session;
                 }
             }
         }
     }
     MHNSessionTask *task = [session createTaskWithOptions:options2 delegate:delegate];
+    if(!task){
+        mhn_log_with_type(mhn_log_facility_pool, OS_LOG_TYPE_ERROR, "%{public}@ failed to create task", self);
+    }
+    [session addTask:task withDescription:identifier request:request];
     return task;
 }
 

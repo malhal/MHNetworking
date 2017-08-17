@@ -24,9 +24,15 @@
 
 @property (nonatomic) NSUInteger creatingTaskCounter;
 @property (readonly, copy, nonatomic) MHNRequestOptions *options;
+@property (readonly, nonatomic) NSURLSession *session;
+@property (readonly, nonatomic) NSMutableDictionary *wrappedTaskByTaskDescription;
+@property (nonatomic) double emptyTimestamp;
+@property (nonatomic) BOOL isComplete;
 
 - (void)willCreateTask;
 - (MHNSessionTask *)createTaskWithOptions:(MHNRequestOptions *)options delegate:(id<MHNRequestDelegate>)delegate;
+- (id)addTask:(MHNSessionTask *)task withDescription:(NSString *)description request:(NSURLRequest *)request;
+- (void)removeTask:(MHNSessionTask *)task;
 
 @end
 

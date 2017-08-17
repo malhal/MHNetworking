@@ -17,6 +17,14 @@
 
 @interface MHNSessionTask : NSObject <MHNSessionTaskDelegate>
 
-- (id)initWithOptions:(MHNRequestOptions *)options delegate:(id<MHNRequestDelegate>)delegate sessionTaskDelegate:(id<MHNSessionDelegate>)sessionTaskDelegate;
+- (id)initWithOptions:(MHNRequestOptions *)options delegate:(id<MHNRequestDelegate>)delegate sessionTaskDelegate:(id<MHNSessionTaskDelegate>)sessionTaskDelegate;
+
+@property (readonly, nonatomic) id<MHNRequestDelegate> delegate;
+@property (nonatomic) BOOL isComplete;
+@property (readonly, copy, nonatomic) MHNRequestOptions *options;
+@property (strong, nonatomic) id<MHNSessionTaskDelegate> sessionTaskDelegate;
+@property (strong, nonatomic) NSURLSessionDataTask *task;
+
+- (NSString *)taskDescription;
 
 @end
