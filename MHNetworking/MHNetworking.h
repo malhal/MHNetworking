@@ -21,3 +21,4 @@ FOUNDATION_EXPORT const unsigned char MHNetworkingVersionString[];
 #import <MHNetworking/MHNRequest.h>
 #import <MHNetworking/MHNCodable.h>
 #import <MHNetworking/MHNProtocolTranslator.h>
+#import <MHNetworking/MHNOperation.h>
